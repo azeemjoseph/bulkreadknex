@@ -10,10 +10,18 @@ router.post("/upload", async (req, res) => {
   try {
     const filePath = path.resolve(__dirname, "./../contactsBulkTest.xlsx");
     const workbook = xlsx.readFile(filePath);
-    const sheet_name_list = workbook.SheetNames;
-    const xlData = xlsx.utils.sheet_to_json(
-      workbook.Sheets[sheet_name_list[0]]
-    );
+
+    // Specify the sheet name you want to read
+    const sheetName = "5000contacts";
+    const worksheet = workbook.Sheets[sheetName];
+
+    if (!worksheet) {
+      return res
+        .status(400)
+        .send(`Sheet "${sheetName}" not found in the Excel file.`);
+    }
+
+    const xlData = xlsx.utils.sheet_to_json(worksheet);
 
     // Array to collect primary keys
     let insertedIds = [];
