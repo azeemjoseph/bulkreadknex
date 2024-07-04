@@ -4,11 +4,11 @@
 
 Welcome to WJIKS! This is version 0.1.0!
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#BulkRead-frontend)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#BulkRead-backend)
 
 # ➤ bulk read
 
-Welcome to the BulkRead Frontend repository! This project serves as the frontend for the BulkRead application.
+Welcome to the BulkRead backend repository! This project serves as the backend for the BulkRead application.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
@@ -27,20 +27,21 @@ BulkRead is an application designed to help users track to upload bulk Data
 
 ## ➤ Features
 
-- **BulkDataRead:** Using node js and Object js.
+- **BulkDataRead:** Using node js, knex js and Objection js.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#project-technologies)
 
 ## ➤ Project Technologies
 
 - **Node js:** A JavaScript enviornment for building.
-- **koa:** A React framework for server-side rendering and routing.
+- **express js:** A node js framework for node js.
+- **Objection js** A node js framework for node js.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#code-structure)
 
 ## ➤ Code Structure
 
-The BulkRead frontend project follows a structured organization to maintain clarity and scalability. Here's an overview of the code structure:
+The BulkRead backend project follows a structured organization to maintain clarity and scalability. Here's an overview of the code structure:
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#features)
 
@@ -52,7 +53,7 @@ The BulkRead frontend project follows a structured organization to maintain clar
 
 ## ➤ Installation
 
-To run the BulkRead frontend locally, follow these steps:
+To run the BulkRead backend locally, follow these steps:
 
 1. **Clone the Repository:**
 
