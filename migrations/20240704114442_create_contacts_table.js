@@ -3,14 +3,15 @@
  * @returns { Promise<void> }
  */
 exports.up = function (knex) {
-  return knex.schema.createTable("contacts", (table) => {
+  return knex.schema.createTable("data", function (table) {
     table.increments("id").primary();
-    table.string("firstName", 255).notNullable();
-    table.string("lastName", 255).notNullable();
-    table.string("mobilePhone", 15).notNullable();
+    table.string("firstName");
+    table.string("lastName");
+    table.string("mobilePhone");
+    // Add more columns as needed
   });
 };
 
 exports.down = function (knex) {
-  return knex.schema.dropTableIfExists("contacts");
+  return knex.schema.dropTableIfExists("data");
 };
