@@ -1,0 +1,19 @@
+{
+  "name": "bulkreadknex",
+  "version": "1.0.0",
+  "description": "<!-- ⚠️ This README has been generated from the file(s) \"blueprint.md\" ⚠️-->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "mysql2": "^3.10.2",
+    "objection": "^3.1.4",
+    "xlsx": "^0.18.5"
+  }
+}
